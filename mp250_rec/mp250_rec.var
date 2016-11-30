@@ -1,0 +1,29 @@
+(********************************************************************
+ * COPYRIGHT -- Bernecker + Rainer
+ ********************************************************************
+ * Programm: mp250_rec
+ * Datei: mp250_rec.var
+ * Autor: Academy
+ * Erstellt: 9. Oktober 2014
+ ********************************************************************
+ * Lokale Variablen des Programms mp250_rec
+ ********************************************************************)
+(*Recipe Data*)
+VAR
+	RegularCoffee : recipe_typ;
+END_VAR
+(*Command Interface*)
+VAR
+	cmdErrorReset : BOOL := FALSE;
+	cmdLoadRecipe : BOOL := FALSE;
+	cmdSaveRecipe : BOOL := FALSE;
+END_VAR
+(*State machine*)
+VAR
+	sStep : enum_Sequence := enACTIVATE;
+END_VAR
+(*mapp components*)
+VAR
+	MpRecipeRegPar_0 : MpRecipeRegPar;
+	MpRecipeXml_0 : MpRecipeXml;
+END_VAR
