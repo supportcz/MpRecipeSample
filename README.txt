@@ -1,2 +1,1 @@
-# MpRecipeSample
 MpRecipe sample task
