@@ -1,4 +1,3 @@
 VAR
-	adrRecipes : UDINT;
-	RecipeChanged : BOOL;
+	recipes : Recipes;
 END_VAR
